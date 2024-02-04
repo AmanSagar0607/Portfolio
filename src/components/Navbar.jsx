@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -27,10 +26,10 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+                    <img src={"/logo.svg"} alt="logo" className="w-9 h-9 object-contain" />
                     <p className="text-white text-[20px] font-semibold cursor-pointer flex ">
                         Aman &nbsp;
-                        <span className='sm:block hidden'> | Personal
+                        <span className='sm:block hidden'> | Web
                         Portfolio</span>
                     </p>
                 </Link>
@@ -58,9 +57,9 @@ const Navbar = () => {
                     />
                     <div
                         className={`${!toggle ? "hidden" : "flex"
-                            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+                            } p-6 black-gradient absolute top-20 right-0 pl-10 mx-4 my-2 min-w-[150px] z-10 rounded-xl`}>
 
-                        <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+                        <ul className='list-none flex justify-end items-start flex-1 flex-col gap-5'>
                             {navLinks.map((nav) => (
                                 <li
                                     key={nav.id}
