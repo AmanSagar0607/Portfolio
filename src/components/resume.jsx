@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+// import { slideIn } from "../utils/motion";
 import { FaDownload } from "react-icons/fa";
 import { styles } from "../styles";
 
