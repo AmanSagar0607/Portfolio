@@ -8,7 +8,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
-import Resume from './Resume.jsx';
+import Resume from './Resume';
 
 export {
   Hero,
